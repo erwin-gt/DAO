@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebApplication1.Models.DAO>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<table>
+    <tr>
+        <th>
+            ID
+        </th>
+
+        <th>
+            Nombre
+        </th>
+
+        <th>
+            Apellido
+        </th>
+
+        <th>
+            Correo
+        </th>
+
+        <th>
+            Direccion
+        </th>
+
+
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayNameFor(m -> item.)
+            </td>
+        </tr>
+    }
+</table>
